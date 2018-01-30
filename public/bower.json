@@ -1,0 +1,17 @@
+{
+  "name": "bloglaravelkjm",
+  "homepage": "https://github.com/Kenntjm12/quejateya-laravel",
+  "authors": [
+    "kenntjm12 <kenntjm12@gmail.com>"
+  ],
+  "description": "prueba de laravel",
+  "main": "blog",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "datatables.net-bs4": "^3.2.2",
+    "font-awesome": "Font-Awesome#^4.7.0"
+  }
+}
