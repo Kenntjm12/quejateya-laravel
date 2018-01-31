@@ -37,6 +37,13 @@ class CountryController extends Controller
     return redirect()->route('admin.countries.index');
   }
 
+  public function edit($id){
+$country = Country::find($id);
+$view = view('admin.countries.edit');
+$view->with('country',$country);
+return $view;
+}
+
   public function update(Request $request, $id){
     $countries = Country::find($id);
     $countries->name = $request->get('name');

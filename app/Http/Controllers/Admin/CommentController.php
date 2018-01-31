@@ -36,6 +36,13 @@ class CommentController extends Controller
     return redirect()->route('admin.comments.index');
   }
 
+  public function edit($id){
+  $comment = Comment::find($id);
+  $view = view('admin.comments.edit');
+  $view->with('comment',$comment);
+  return $view;
+  }
+
   public function update(Request $request, $id){
     $comment = Comment::find($id);
     $comment->description = $request->get('description');

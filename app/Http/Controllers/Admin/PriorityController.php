@@ -38,6 +38,13 @@ class PriorityController extends Controller
     return redirect()->route('admin.priorities.index');
   }
 
+  public function edit($id){
+$priority = Priority::find($id);
+$view = view('admin.priorities.edit');
+$view->with('priority',$priority);
+return $view;
+}
+
   public function update(Request $request, $id){
     $priority = Priority::find($id);
     $priority->name = $request->get('name');

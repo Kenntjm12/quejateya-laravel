@@ -22,6 +22,13 @@ class TagController extends Controller
     return $view;
   }
 
+  public function edit($id){
+  $tag = Tag::find($id);
+  $view = view('admin.tags.edit');
+  $view->with('tag',$tag);
+  return $view;
+  }
+
   public function store(request $request){
     $tag = new Tag();
     $tag->name = $request->get('name');

@@ -36,6 +36,13 @@ class ValuationController extends Controller
     return redirect()->route('admin.valuations.index');
   }
 
+  public function edit($id){
+$valuation = Valuation::find($id);
+$view = view('admin.valuations.edit');
+$view->with('valuation',$valuation);
+return $view;
+}
+
   public function update(Request $request, $id){
     $valuation = Valuation::find($id);
     $valuation->name = $request->get('name');
