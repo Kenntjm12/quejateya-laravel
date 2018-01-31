@@ -39,7 +39,7 @@
   </div>
 
   <div class="card-footer">
-    <button id="btnSave" class"btn btn-success">
+    <button id="btnSave" class="btn btn-success">
       <i class="fa fa-save"></i>  Guardar
     </button>
     <a href="{{ route('admin.categories.index') }}" class="btn btn-danger" id="btnCancel">
