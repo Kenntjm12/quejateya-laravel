@@ -49,9 +49,10 @@
   </div>
 
   <div class="card-footer">
-    <button id="btnSave" class="btn btn-success">
-      <i class="fa fa-save"></i>  Guardar
-    </button>
+    <a href="{{ route('admin.categories.edit',[$category->id]) }}" class="btn btn-success">
+
+      <i class="fa fa-pencil"></i>Editar
+    </a>
     <a href="{{ route('admin.categories.index') }}" class="btn btn-danger" id="btnCancel">
       <i class="fa fa-arrow-left"></i>Volver
     </a>

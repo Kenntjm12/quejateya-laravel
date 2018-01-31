@@ -18,7 +18,7 @@
   </div>
 
   <div class="col-md-6">
-    <label for="hashtag" class="control-label">Hashtag <span class="text-danger">*</span></label>
+    <label for="hashtag" class="control-label">Codigo <span class="text-danger">*</span></label>
     <input type="text" name="code" id="code" value="" class="form-control" placeholder="Introduzca el Codigo" required>
   </div>
 </div>
