@@ -59,7 +59,7 @@ return $view;
   public function show($id){
     $priority = Priority::find($id);
     $view = view('admin.priorities.show');
-    $view->with('priorities',$priority);
+    $view->with('priority',$priority);
     return $view;
   }
 

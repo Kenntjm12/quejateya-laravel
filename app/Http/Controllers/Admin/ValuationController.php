@@ -56,7 +56,7 @@ return $view;
   public function show($id){
     $valuation = Valuation::find($id);
     $view = view('admin.valuations.show');
-    $view->with('comment',$valuation);
+    $view->with('valuation',$valuation);
     return $view;
   }
 
