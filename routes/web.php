@@ -44,7 +44,7 @@ Route::group(["namespace"=>'Admin'],function() { //para no tener q poner Admin\C
     Route::get('/comentarios/crear','CommentController@create')->name('admin.comments.create');
     Route::post('/comentarios','CommentController@store')->name('admin.comments.store');
     Route::get('comentarios/{id}/editar','CommentController@edit')->name('admin.comments.edit');
-    Route::get('comentarios/{id}/actualizar','CommentController@update')->name('admin.comments.update');
+    Route::put('comentarios/{id}/actualizar','CommentController@update')->name('admin.comments.update');
     Route::get('comentarios/{id}/detalle','CommentController@show')->name('admin.comments.show');
     Route::get('comentarios/{id}/eliminar','CommentController@delete')->name('admin.comments.delete');
     //Valuations
@@ -52,7 +52,7 @@ Route::group(["namespace"=>'Admin'],function() { //para no tener q poner Admin\C
     Route::get('/valoraciones/crear','ValuationController@create')->name('admin.valuations.create');
     Route::post('/valoraciones','ValuationController@store')->name('admin.valuations.store');
     Route::get('valoraciones/{id}/editar','ValuationController@edit')->name('admin.valuations.edit');
-    Route::get('valoraciones/{id}/actualizar','ValuationController@update')->name('admin.valuations.update');
+    Route::put('valoraciones/{id}/actualizar','ValuationController@update')->name('admin.valuations.update');
     Route::get('valoraciones/{id}/detalle','ValuationController@show')->name('admin.valuations.show');
     Route::get('valoraciones/{id}/eliminar','ValuationController@delete')->name('admin.valuations.delete');
     //Priorities
@@ -60,7 +60,7 @@ Route::group(["namespace"=>'Admin'],function() { //para no tener q poner Admin\C
     Route::get('/prioridades/crear','PriorityController@create')->name('admin.priorities.create');
     Route::post('/prioridades','PriorityController@store')->name('admin.priorities.store');
     Route::get('prioridades/{id}/editar','PriorityController@edit')->name('admin.priorities.edit');
-    Route::get('prioridades/{id}/actualizar','PriorityController@update')->name('admin.priorities.update');
+    Route::put('prioridades/{id}/actualizar','PriorityController@update')->name('admin.priorities.update');
     Route::get('prioridades/{id}/detalle','PriorityController@show')->name('admin.priorities.show');
     Route::get('prioridades/{id}/eliminar','PriorityController@delete')->name('admin.priorities.delete');
     //Posts
@@ -72,7 +72,7 @@ Route::group(["namespace"=>'Admin'],function() { //para no tener q poner Admin\C
     Route::get('/etiquetas/crear','TagController@create')->name('admin.tags.create');
     Route::post('/etiquetas','TagController@store')->name('admin.tags.store');
     Route::get('etiquetas/{id}/editar','TagController@edit')->name('admin.tags.edit');
-    Route::get('etiquetas/{id}/actualizar','TagController@update')->name('admin.tags.update');
+    Route::put('etiquetas/{id}/actualizar','TagController@update')->name('admin.tags.update');
     Route::get('etiquetas/{id}/detalle','TagController@show')->name('admin.tags.show');
     Route::get('etiquetas/{id}/eliminar','TagController@delete')->name('admin.tags.delete');
   });

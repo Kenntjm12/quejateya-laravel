@@ -37,11 +37,11 @@ class CommentController extends Controller
   }
 
   public function edit($id){
-  $comment = Comment::find($id);
-  $view = view('admin.comments.edit');
-  $view->with('comment',$comment);
-  return $view;
-  }
+$comment = Comment::find($id);
+$view = view('admin.comments.edit');
+$view->with('comment',$comment);
+return $view;
+}
 
   public function update(Request $request, $id){
     $comment = Comment::find($id);
